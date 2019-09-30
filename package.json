@@ -1,0 +1,19 @@
+{
+  "name": "mat-typescript-course",
+  "version": "1.0.0",
+  "description": "Typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonplague/mat-typescript-course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasonplague/mat-typescript-course/issues"
+  },
+  "homepage": "https://github.com/jasonplague/mat-typescript-course#readme"
+}
