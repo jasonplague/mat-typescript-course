@@ -1,2 +1,3 @@
-# mat-typescript-course
-Typescript
+## Steps to commit and push the project code:
+
+1. 
