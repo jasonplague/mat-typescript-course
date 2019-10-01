@@ -4,7 +4,8 @@
   "description": "Typescript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "protractor ./e2ejs/protractor.conf.js",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
