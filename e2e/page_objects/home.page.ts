@@ -3,7 +3,7 @@
 import { $, by, element } from "protractor";
 
 export class HomePage {
-    public addProduct = $('.mat-flat-button.mat-primay');
+    public addProduct = $(".mat-flat-button.mat-primay");
 
 //When we need to identify a unique item in a table
 
