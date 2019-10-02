@@ -6,5 +6,6 @@ export class AddProductPage {
     public productDescriptionField = $("#mat-input-1");
     public productPriceField = $("#mat-input-2");
     public submitButtonField = $("[type=submit]");
+    submitButton: any;
 
 }

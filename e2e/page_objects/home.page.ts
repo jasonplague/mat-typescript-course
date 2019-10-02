@@ -3,6 +3,9 @@
 import { $, by, element } from "protractor";
 
 export class HomePage {
+    static findProductInTable(product: myLib.Product) {
+        throw new Error("Method not implemented.");
+    }
     public addProduct = $(".mat-flat-button.mat-primay");
 
 // When we need to identify a unique item in a table
@@ -16,5 +19,6 @@ export class HomePage {
     public findProductInTable = (product: myLib.Product) => {
      return element(by.cssContainingText(".matt-cell", product.name));
  }
+    addProductButton: any;
 }
 
