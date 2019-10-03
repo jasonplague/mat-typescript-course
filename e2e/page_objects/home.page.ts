@@ -1,11 +1,9 @@
 // Example class import
-
 import { $, by, element } from "protractor";
 
 export class HomePage {
 
-    public addProduct = $(".mat-flat-button.mat-primary");
-
+public addProduct = $(".mat-flat-button.mat-primary");
 /**
  * Find a product in the table
  *
@@ -15,5 +13,9 @@ export class HomePage {
     public findProductInTable = (product: myLib.Product) => {
      return element.all(by.cssContainingText(".matt-cell", product.name));
  }
+
+public findProductsInTable = (product: myLib.Product) => {
+    return element.all(by.cssContainingText(".mat-cell" , product.name));
+}
 
 }

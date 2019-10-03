@@ -15,6 +15,9 @@ Given("a product does not exist", function(dataTable) {
     const arrayOfProducts = dataTable.hashes();
     this.product = arrayOfProducts[0];
 
+    homePage.findProductInTable(this.product).click();
+    viewProductPage.deleteButton.click();
+
     return expect(homePage.findProductInTable(this.product).isPresent()).to.eventually.be.false;
 });
 
