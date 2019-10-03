@@ -1,5 +1,5 @@
-import { Before, After, Status } from "cucumber";
 import { browser } from "protractor";
+import { Before, After, Status } from "cucumber";
 
 Before({timeout: 100 * 1000}, async function() {
     // Get command means navigate to browser
