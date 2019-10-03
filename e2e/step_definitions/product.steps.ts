@@ -11,7 +11,7 @@ const viewProductPage: ViewProductPage = new ViewProductPage();
 const chai = require("chai").use(require("chai-as-promised"));
 const expect = chai.expect;
 
-Given("a product does not exist", async function (dataTable) {
+Given("a product does not exist", async function(dataTable) {
     const arrayOfProducts = dataTable.hashes();
     this.product = arrayOfProducts[0];
 
@@ -23,7 +23,7 @@ Given("a product does not exist", async function (dataTable) {
     return expect(homePage.findProductInTable(this.product).isPresent()).to.eventually.be.false;
 });
 
-When("I add the product", function () {
+When("I add the product", function() {
     homePage.addProduct.click();
     addProductPage.productNameField.sendKeys(this.product.name);
     addProductPage.productDescriptionField.sendKeys(this.product.description);
@@ -32,6 +32,6 @@ When("I add the product", function () {
     return addProductPage.submitButtonField.click();
 });
 
-Then("the product is created", function () {
+Then("the product is created", function() {
     return expect(viewProductPage.productName(this.product).isPresent()).to.eventually.be.true;
 });
