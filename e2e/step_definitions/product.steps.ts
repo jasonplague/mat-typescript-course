@@ -29,6 +29,5 @@ When("I add the product", function() {
 
 Then("the product is created", function() {
     // Write code here that turns the phrase above into concrete actions
-    return expect(viewProductPage.productName(this.product).isPresent())
-        .to.eventually.be.true;
+    return expect(viewProductPage.productName(this.product).isPresent()).to.eventually.be.true;
 });
